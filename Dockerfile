@@ -1,10 +1,5 @@
 # Ruby on Rails service Dockerfile
-FROM ruby:2.7.2
-
-# install necessary packages
-RUN apt-get update && apt-get install -y \
-  nodejs \
-  postgresql-client
+FROM ruby:3.2.0
 
 # set working directory
 WORKDIR /app
