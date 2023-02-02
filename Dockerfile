@@ -16,11 +16,8 @@ COPY . .
 # run migrations
 RUN bundle exec rake db:migrate
 
-# set environment variable
-ENV RAILS_ENV=production
-
 # expose port 3000
-EXPOSE 3000
+EXPOSE 3333
 
 # start the server
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
+CMD ["bundle", "exec", "rails", "server", "-p", "3333", "-b", "0.0.0.0"]
