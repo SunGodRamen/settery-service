@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+
+task rc.default.data.location=./.task
+TASKDATA=./.task
+task color bright red on white
